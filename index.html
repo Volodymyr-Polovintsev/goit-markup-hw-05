@@ -462,11 +462,29 @@
             </li>
           </ul>
         </div>
+        <div class="footer-form">
+          <p class="footer-text-form">Subscribe</p>
+          <form class="footer-form-cont">
+            <label for="footer-email">
+              <input
+                id="footer-email"
+                type="email"
+                class="footer-email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button type="submit" class="footer-btn">
+              Subscribe<svg class="footer-sub" width="24" height="24">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
     <!--modal-->
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button type="button" class="modal-close-btn">
           <svg class="modal-close-icon" width="8" height="8">
@@ -517,8 +535,35 @@
               </svg>
             </div>
           </div>
+          <div class="textarea-container">
+            <label for="user-coment" class="modal-label">Comment</label>
+            <textarea
+              name="user-coment"
+              id="user-coment"
+              class="textarea"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="checkbox">
+            <input
+              type="checkbox"
+              name="policy"
+              id="policy"
+              value="true"
+              class="input-check visually-hidden"
+            />
+            <label for="policy" class="check-text"
+              ><span
+                ><svg class="check-icon" width="15" height="15">
+                  <use
+                    href="./images/icons.svg#icon-Property"
+                  ></use></svg></span
+              >I accept the terms and conditions of the
+              <a href=""> Privacy Policy</a></label
+            >
+          </div>
 
-          <button type="submit">Send</button>
+          <button class="btn-submit" type="submit">Send</button>
         </form>
       </div>
     </div>
